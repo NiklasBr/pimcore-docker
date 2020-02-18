@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y lsb-release \
     && echo "deb http://deb.debian.org/debian $(lsb_release -sc)-backports main" > /etc/apt/sources.list.d/backports.list \
     && apt-get update && apt-get install -y --no-install-recommends \
         autoconf automake libtool nasm make pkg-config libz-dev build-essential openssl g++ \
-        zlib1g-dev libicu-dev libbz2-dev libpng-dev libc-client-dev \
+        libicu-dev libbz2-dev libpng-dev libc-client-dev \
         libkrb5-dev libxml2-dev libxslt1.1 libxslt1-dev locales locales-all \
         ffmpeg html2text ghostscript libreoffice pngcrush jpegoptim exiftool poppler-utils git wget \
         libx11-dev libjpeg-dev python3-pip opencv-data webp graphviz cmake unzip cron \
